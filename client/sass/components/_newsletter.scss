@@ -1,0 +1,62 @@
+.newsletter {
+
+	label {
+		margin: 0 15px 0 0;
+		font-style: italic;
+		font-weight: 600;
+		font-size: remItem(13);
+	}
+
+	&__input {
+		width: 155px;
+		height: 30px;
+		border: 0;
+		font-size: remItem(13);
+		font-style: italic;
+		line-height: 1;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__wrapper {
+		padding: 10px 15px 12px;
+		background-color: $color__default;
+		@include radiusItem(6px);
+		@include animateItem;
+		border: 2px solid darken($color__default, 5.2%);
+
+		&.is-active {
+			border-color: $color__hero;
+			@include shadowItem(0, 0, 20px, rgba(13,169,229,0.3));
+		}
+	}
+
+	&__submit {
+		width: 30px;
+		height: 20px;
+		border-top: 0;
+		border-bottom: 0;
+		border-right: 0;
+		border-left: 1px solid darken($color__default, 8%);
+		text-indent: -200px;
+		cursor: pointer;
+		overflow: hidden;
+		background-color: transparent;
+		background-image: url(./images/icons/newsletter.svg);
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: 15px;
+
+		&:focus { outline: none; }
+	}
+
+	@media screen and (max-width: 565px) {
+		
+		label {
+			display: block;
+			margin: 0 0 15px 0;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.donate {
+	padding: 140px 0;
+	text-align: center;
+	background-color: $color__donation;
+
+	&__title {
+		color: $color__default;
+	}
+
+	.btn {
+		margin-top: 25px;
+
+		&:hover {
+			color: $color__donation;
+		
+			&:after {
+				background-color: $color__donation;		
+			}
+		}
+
+		&:after {
+			-webkit-mask-image: url(./images/icons/beer.svg);
+			mask-image: url(./images/icons/beer.svg);
+			-webkit-mask-size: 16px;
+			mask-size: 16px;
+			background-color: $color__default;
+		}
+	}
+}

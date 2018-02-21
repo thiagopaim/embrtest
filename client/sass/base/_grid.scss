@@ -1,0 +1,33 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*.row {
+	width: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+	
+	display: -moz-webkit-flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	
+	-ms-flex-direction: row;
+	-moz-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	
+	-ms-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}*/
+
+/*@mixin colItem($col) {
+	width: ((100% * $col) / 12);
+	padding: 0 15px;
+}*/

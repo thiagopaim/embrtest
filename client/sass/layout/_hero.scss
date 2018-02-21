@@ -1,0 +1,94 @@
+.hero {
+	position: relative;
+	padding: 140px 0 250px;
+	overflow: hidden;
+	background-color: $color__hero;
+
+	&__wrapper {
+		max-width: 940px;
+		padding: 0 15px;
+		margin: 0 auto;
+		text-align: right;
+		color: $color__default;
+	}
+
+	&__title {
+		position: relative;
+		margin: 0 0 15px;
+		font-family: Satisfy, cursive;
+		font-size: remItem(56);
+		color: $color__default;
+		z-index: 2;
+	}
+
+	&__subtitle {
+		position: relative;
+		font-size: remItem(28);
+		font-weight: 300;
+		color: $color__default;
+		z-index: 2;
+		
+		span {
+			font-style: italic;
+			font-weight: 600;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 232px;
+		height: 484px;
+		left: 15%;
+		bottom: -160px;
+		z-index: 1;
+		background-image: url(./images/iphone5.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.btn {
+
+		&:after {
+			-webkit-mask-image: url(./images/icons/download.svg);
+			mask-image: url(./images/icons/download.svg);
+			background-color: $color__default;
+		}
+
+		&:hover {
+
+			&:after {
+				background-color: $color__hero;		
+			}
+		}
+	}
+
+	@media screen and (max-width: 579px) {
+
+		&:after {
+			left: 10%;
+		}
+	}
+
+	@media screen and (max-width: 498px) {
+
+		&__wrapper {
+			text-align: center;
+		}
+
+		&__title {
+			font-size: remItem(40);
+		}
+
+		&__subtitle {
+			font-size: remItem(22);
+		}
+
+		&:after {
+			margin: 0 0 0 -116px;
+			left: 50%;
+			bottom: -290px;
+		}
+	}
+}

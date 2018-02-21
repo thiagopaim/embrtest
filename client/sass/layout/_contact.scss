@@ -1,0 +1,66 @@
+.contact {
+	padding: 140px 0;
+	text-align: center;
+	background-color: darken($color__default, 5.2%);
+
+	&__social {
+		margin-bottom: 45px;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	&__social-link {
+		display: block;
+		position: relative;
+		width: 57px;
+		height: 57px;
+		margin: 15px;
+		border: 3px solid $color__text;
+		text-indent: -200px;
+		overflow: hidden;
+		background-size: 29px;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include radiusItem(60px);
+		@include animateItem;
+
+		&--dribbble,
+		&--facebook,
+		&--twitter,
+		&--email {
+			@extend .contact__social-link;
+
+			&:hover {
+				@include scaleItem(1.1);
+			}
+		}
+
+		&--dribbble {
+			background-image: url(./images/icons/dribbble.svg);
+		}
+
+		&--facebook {
+			background-image: url(./images/icons/facebook.svg);
+			background-size: 13px;
+		}
+
+		&--twitter {
+			background-image: url(./images/icons/twitter.svg);
+			background-size: 25px;
+		}
+
+		&--email {
+			background-image: url(./images/icons/telegram.svg);
+			background-size: 25px;
+		}
+	}
+
+	@media screen and (max-width: 392px) {
+
+		&__social-link {
+			margin: 5px;
+		}
+	}
+}

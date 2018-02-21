@@ -1,0 +1,50 @@
+.btn {
+	display: inline-block;
+	position: relative;
+	padding: 15px 65px 15px 30px;
+	margin-top: 60px;
+	border: 2px solid $color__default;
+	font-size: remItem(12);
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $color__default;
+	@include radiusItem(3px);
+	@include animateItem;
+
+	&:hover {
+		color: $color__hero;
+		background-color: $color__default;
+		@include shadowItem;
+
+		&:after {
+			// animation
+			animation-name: anima;
+			animation-delay: 0.5s;
+			animation-duration: 3s;
+			animation-fill-mode: both;
+			animation-iteration-count: 1;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		right: 25px;
+		margin-top: -9px;
+		top: 50%;
+
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+
+		@include animateItem;
+	}
+
+	@media screen and (max-width: 579px) {
+
+		margin-top: 45px;
+	}
+}

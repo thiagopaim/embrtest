@@ -1,0 +1,107 @@
+.portfolio {
+	position: relative;
+	padding: 140px 0 250px;
+	overflow: hidden;
+
+	&__wrapper {
+		max-width: 940px;
+		padding: 0 15px 0 40%;
+		margin: 0 auto;
+	}
+
+	.btn {
+		border-color: $color__drible;
+		color: $color__drible;
+
+		&:hover {
+			color: $color__default;
+			background-color: $color__drible;
+
+			&:after {
+				background-color: $color__default;		
+			}
+		}
+
+		&:after {
+			-webkit-mask-image: url(./images/icons/dribbble.svg);
+			mask-image: url(./images/icons/dribbble.svg);
+			-webkit-mask-size: 16px;
+			mask-size: 16px;
+			background-color: $color__drible;
+		}
+	}
+
+	&__desktop {
+		bottom: -20px;
+		left: 5%;
+		z-index: 1;
+	}
+
+	&__notebook {
+		bottom: -40px;
+		left: -10%;
+		z-index: 2;
+	}
+
+	&__ipad {
+		width: 175px;
+		bottom: -40px;
+		left: 32%;
+		z-index: 3;
+	}
+
+	&__ipadmini {
+		bottom: -20px;
+		left: 46.5%;
+		z-index: 4;
+	}
+
+	&__iphone {
+		width: 75px;
+		bottom: -60px;
+		left: 45.5%;
+		z-index: 4;
+	}
+
+	img {
+		position: absolute;
+	}
+
+	@media screen and (max-width: 1139px) {
+
+		&__desktop {
+			right: 63%;
+			left: auto;
+		}
+	}
+
+	@media screen and (max-width: 636px) {
+
+		&__wrapper {
+			padding: 0 15px;
+		}
+
+		&__desktop {
+			display: none;
+		}
+
+		&__notebook {
+			display: none;
+		}
+
+		&__ipad {
+			left: 25%;
+		}
+
+		&__iphone {
+			left: 40%;
+		}
+	}
+
+	@media screen and (max-width: 498px) {
+
+		&__wrapper {
+			text-align: center;
+		}
+	}
+}

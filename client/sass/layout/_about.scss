@@ -1,0 +1,123 @@
+.about {
+	position: relative;
+	padding: 140px 0;
+	overflow: hidden;
+	background-color: darken($color__default, 5.2%);
+
+	&__wrapper {
+		max-width: 940px;
+		padding: 0 25% 0 15px;
+		margin: 0 auto;
+	}
+
+	p,
+	blockquote { color: darken($color__default, 45%); }
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 450px;
+		height: 640px;
+		right: -10%;
+		bottom: -200px;
+		z-index: 1;
+		background-image: url(./images/ipad.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.btn {
+		border-color: $color__donation;
+		color: $color__donation;
+
+		&:hover {
+			color: $color__default;
+			background-color: $color__donation;
+
+			&:after {
+				background-color: $color__default;		
+			}
+		}
+
+		&:after {
+			-webkit-mask-image: url(./images/icons/newsletter.svg);
+			mask-image: url(./images/icons/newsletter.svg);
+			-webkit-mask-size: 16px;
+			mask-size: 16px;
+			background-color: $color__donation;
+		}
+	}
+
+	@media screen and (max-width: 1099px) {
+
+		&:after {
+			right: -20%;
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+
+		&:after {
+			right: -25%;
+		}
+	}
+
+	@media screen and (max-width: 940px) {
+
+		&__wrapper {
+			width: 60%;
+			padding: 0 15px;
+			margin: 0;
+		}
+
+		&:after {
+			bottom: -90px;
+		}
+	}
+
+	@media screen and (max-width: 696px) {
+
+		&__wrapper {
+			width: 50%;
+		}
+	}
+
+	@media screen and (max-width: 636px) {
+
+		&__wrapper {
+			width: 100%;
+		}
+
+		&:after {
+			bottom: -420px;
+		}
+	}
+
+	@media screen and (max-width: 579px) {
+
+		&__wrapper {
+			padding-bottom: 260px;
+		}
+
+		&:after {
+			margin: 0 0 0 -225px;
+			bottom: -300px;
+			left: 50%;
+		}
+	}
+
+	@media screen and (max-width: 498px) {
+
+		&__wrapper {
+			padding-bottom: 130px;
+			text-align: center;
+		}
+
+		&:after {
+			width: 280px;
+			margin: 0 0 0 -140px;
+			background-size: 100%;
+		}
+	}
+}
