@@ -1,0 +1,22 @@
+section#contact.contact
+	ul.contact__social
+		li.contatc__social-item
+			a.contact__social-link--dribbble(href="http://dribbble.com")
+				| Dribble
+		li.contatc__social-item
+			a.contact__social-link--facebook(href="http://facebook.com/")
+				| Facebook
+		li.contatc__social-item
+			a.contact__social-link--twitter(href="http://twitter.com/")
+				| Twitter
+		li.contatc__social-item
+			a.contact__social-link--email(href="mailto:conato@paim.website")
+				| E-mail
+
+	form#newsletter.newsletter
+		label(for="uemail")
+			| Newsletter Subscription
+		span.newsletter__wrapper
+			input.newsletter__input(type="email", name="uemail", id="uemail", placeholder="Enter Email", required=true)
+			button(type="submit", form="newsletter").newsletter__submit
+				| Enviar

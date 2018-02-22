@@ -6,7 +6,7 @@ html
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		title Embraer Test
-		meta(name='description', content='')
+		meta(name='description', content='Teste')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,600i")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Satisfy")
@@ -15,75 +15,11 @@ html
 	body
 		
 		include ./includes/nav.jade
-		
-		section#hero.hero
-			.hero__wrapper
-				h1.hero__title
-					| Meet Perth,
-				h2.hero__subtitle
-					| A stupid simple, flat PSD. Oh yeah, it's <span>free</span> too!
-				a(href="#").btn
-					| Download
-
-		section#about.about
-			.about__wrapper
-				h1.about__title
-					| A Longwinded Header
-				p
-					| She'll be right paddock how lets throw a ciggies. She'll be right ute to built like a doovalacky. We're going rack off bloody she'll be right pash. You little ripper tucker also get a dog up ya greenie.
-				blockquote
-					| You little ripper boozer no worries she'll be right holy dooley!. Come a freo also as cross as a your shout. Lets throw a khe sanh flamin dead dingo's donger. Lets get some fisho with grab us a trackie dacks.
-				a.btn(href="#")
-					| Say hello
-
-		section#portfolio.portfolio
-			.portfolio__wrapper
-				h1.portfolio__title
-					| Get a Dog Up Ya’
-				p
-					| <strong>She'll be right paddock how lets throw a ciggies. She'll be right ute to built like a doovalacky.</strong>
-				p 
-					| We're going rack off bloody she'll be right pash. You little ripper tucker also get a dog up ya greenie.
-				a.btn(href="#")
-					| View on dribbble
-
-			img.portfolio__desktop(src="./images/imac.png", alt="Porfólio Desktop")
-			img.portfolio__notebook(src="./images/macbook.png", alt="Porfólio Notebook")
-			img.portfolio__ipad(src="./images/ipad.png", alt="Porfólio iPad")
-			img.portfolio__ipadmini(src="./images/ipadMini.png", alt="Porfólio iPad Mini")
-			img.portfolio__iphone(src="./images/iphone5.png", alt="Porfólio iPhone")
-
-		section#donate.donate
-			h1.donate__title 
-				| Like What You See?
-			a.btn(href="#")
-				| Buy me a beer
-
-		section#contact.contact
-			ul.contact__social
-				li.contatc__social-item
-					a.contact__social-link--dribbble(href="http://dribbble.com")
-						| Dribble
-				li.contatc__social-item
-					a.contact__social-link--facebook(href="http://facebook.com/")
-						| Facebook
-				li.contatc__social-item
-					a.contact__social-link--twitter(href="http://twitter.com/")
-						| Twitter
-				li.contatc__social-item
-					a.contact__social-link--email(href="mailto:conato@paim.website")
-						| E-mail
-
-			form#newsletter.newsletter
-				label(for="uemail")
-					| Newsletter Subscription
-				span.newsletter__wrapper
-					input.newsletter__input(type="email", name="uemail", id="uemail", placeholder="Enter Email", required=true)
-					button(type="submit", form="newsletter").newsletter__submit
-						| Enviar
-
-		footer.footer
-			p
-				| &copy; #{ new Date().getFullYear() } Web Test Embraer
+		include ./includes/hero.jade
+		include ./includes/about.jade
+		include ./includes/portfolio.jade
+		include ./includes/donate.jade
+		include ./includes/contact.jade
+		include ./includes/footer.jade
 		
 		script(async, src="build.js")
