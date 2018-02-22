@@ -31,3 +31,57 @@
 		transform: scale3d(1, 1, 1);
 	}
 }
+
+@keyframes bounce {
+
+	0% {
+		-webkit-transform: translateX(0px) translateY(0px);
+		transform: translateX(0px) translateY(0px);
+	}
+
+	20% {
+		-webkit-transform: translateX(0px) translateY(0px);
+		transform: translateX(0px) translateY(0px);
+	}
+
+	30% {
+		-webkit-transform: translateX(0) translateY(-10px);
+		transform: translateX(0px) translateY(-10px);
+	}
+
+	40% {
+		-webkit-transform: translateX(0px) translateY(0px);
+		transform: translateX(0px) translateY(0px);
+	}
+
+	50% {
+		-webkit-transform: translateX(0px) translateY(-10px);
+		transform: translateX(0px) translateY(-10px);	
+	}
+
+	60% {
+		-webkit-transform: translateX(0px) translateY(0px);
+		transform: translateX(0px) translateY(0px);	
+	}
+
+	70% {
+		-webkit-transform: translateX(0px) translateY(-5px);
+		transform: translateX(0px) translateY(-5px);		
+	}
+
+	80% {
+		-webkit-transform: translateX(0px) translateY(0px);
+		transform: translateX(0px) translateY(0px);		
+	}
+
+	90% {
+		-webkit-transform: translateX(0px) translateY(-2px);
+		transform: translateX(0px) translateY(-2px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0px) translateY(0px);
+		transform: translateX(0px) translateY(0px);
+
+	}
+}

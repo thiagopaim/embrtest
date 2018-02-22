@@ -1,5 +1,29 @@
 .footer {
+	position: relative;
 	padding: 25px 15px;
+
+	&__to-infinity-and-beyond {
+		display: block;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		margin: -20px 0 0 0;
+		right: 15px;
+		top: 50%;
+		overflow: hidden;
+		text-indent: -1000px;
+		background-color: darken($color__default, 5.2%);
+		background-image: url(./images/icons/arrow.svg);
+		background-size: 10px;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include radiusItem(3px);
+		@include animateItem;
+
+		&:hover {
+			background-color: darken($color__default, 15%);
+		}
+	}
 
 	p {
 		font-size: remItem(10);

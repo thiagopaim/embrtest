@@ -18,7 +18,14 @@
 			background-color: $color__drible;
 
 			&:after {
-				background-color: $color__default;		
+				background-color: $color__default;
+
+				// animation
+				animation-name: bounce;
+				animation-delay: 0.5s;
+				animation-duration: 3s;
+				animation-fill-mode: both;
+				animation-iteration-count: infinite;
 			}
 		}
 
