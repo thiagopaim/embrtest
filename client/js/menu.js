@@ -1,11 +1,10 @@
 var mobileMenu = document.querySelector('.nav__mobile'),
 	mobileLink = document.querySelectorAll('.nav__link')
 
-function goToSection() {
+function goToSection(event) {
 	event.preventDefault()
 	section = this.hash.substr(1)
 	window.location.href = '#' + section
-
 	mobileMenu.parentElement.classList.remove('is-active')
 }
 
