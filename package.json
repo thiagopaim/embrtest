@@ -1,5 +1,5 @@
 {
-  "name": "embraer",
+  "name": "waldirpescaria",
   "version": "1.0.0",
   "description": "Teste front para Emraer / Mult-e",
   "main": "gulpfile.js",
@@ -22,12 +22,17 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
-    "gulp-jade": "^1.1.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-js-import": "^1.0.6",
     "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }
